@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr>
+
+    <h2 id="indice">Índice</h2>
+    <ol>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+        <li><a href="#exemplos">Exemplos de Tags</a></li>
+    </ol>
+    <hr>
+
+    <h2 id="historia">História dos computadores</h2>
+    <p>A história dos computadores é fascinante e repleta de inovações ao longo do tempo. Desde os primórdios, quando
+        dispositivos mecânicos como a Ábaco eram utilizados para realizar cálculos simples, até os computadores
+        modernos, que são capazes de executar operações complexas em frações de segundo, a evolução tecnológica foi
+        impressionante.</p>
+
+    <p><u>No século XIX</u>, máquinas como a <strong><i>Máquina Analítica de Charles Babbage</i></strong> e a
+        <strong><i>Teoria dos Conjuntos de Ada Lovelace</i></strong> foram marcos importantes no desenvolvimento da
+        computação, mesmo que não tenham sido construídas na época.</p>
+
+    <p><u>O século XX</u> viu avanços significativos, como a invenção do <strong>ENIAC (Electronic Numerical Integrator
+            and Computer)</strong>, o primeiro computador eletrônico de grande escala, em 1946. A partir daí, a
+        tecnologia dos computadores começou a se desenvolver rapidamente, com a introdução de dispositivos como
+        transistores, circuitos integrados e microprocessadores.</p>
+
+    <p><u>Na década de 1970</u>, surgiram os primeiros computadores pessoais, como o <strong>Altair 8800</strong> e o
+        <strong>Apple I</strong>, que foram os precursores do que viria a se tornar uma revolução na computação pessoal.
+    </p>
+
+    <p><u>Os anos 1980</u> testemunharam a popularização dos computadores pessoais, com empresas como a IBM e a Apple
+        liderando o mercado. Foi também nessa época que a <strong>World Wide Web</strong> foi desenvolvida por Tim
+        Berners-Lee, abrindo caminho para a internet como a conhecemos hoje.</p>
+
+    <p>Desde então, os computadores continuaram a se tornar cada vez mais poderosos e acessíveis, com inovações como
+        laptops, smartphones e computação em nuvem, que mudaram fundamentalmente a forma como interagimos com a
+        tecnologia.</p>
+
+    <p>Para mais informações sobre a história dos computadores, você pode conferir este <a
+            href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_computa%C3%A7%C3%A3o" target="_blank">link</a>.</p>
+
+    <a href="#indice">Voltar ao índice</a>
+    <hr>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <p>Clients, em termos de computação e redes, referem-se a dispositivos ou programas que solicitam serviços ou
+        recursos de outros dispositivos ou programas chamados de servers. Em uma arquitetura cliente-servidor, os
+        clients são responsáveis por enviar requisições aos servers para obter acesso a dados, arquivos, serviços ou
+        outras funcionalidades.</p>
+
+    <p>Os clients podem assumir diferentes formas, incluindo computadores pessoais, smartphones, tablets, navegadores da
+        web, aplicativos de software, entre outros. Eles se conectam aos servers por meio de uma rede, como a internet,
+        LANs (Redes Locais) ou WANs (Redes de Área Ampla), e utilizam protocolos de comunicação, como HTTP, FTP, SMTP,
+        entre outros, para interagir com os servers</p>
+
+    <p>No contexto da computação em nuvem, os clients podem ser aplicativos ou interfaces de usuário que acessam e
+        interagem com os serviços e recursos hospedados na nuvem, como armazenamento de dados, processamento de dados,
+        hospedagem de websites, entre outros.</p>
+
+    <a href="#indice">Voltar ao índice</a>
+    <hr>
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <p>Servers, em termos de computação e redes, são dispositivos ou programas que fornecem serviços, recursos ou dados
+        para outros dispositivos chamados de clients. Em uma arquitetura cliente-servidor, os servers são responsáveis
+        por atender às solicitações dos clients e fornecer acesso a recursos como arquivos, aplicativos, impressoras,
+        bancos de dados, entre outros.</p>
+
+    <p>Os servers podem assumir diferentes formas e desempenhar diferentes funções, dependendo das necessidades da rede
+        ou do sistema em que estão operando. Alguns exemplos comuns de servers incluem servidores de arquivos,
+        servidores web, servidores de e-mail, servidores de banco de dados, servidores de aplicativos, entre outros.</p>
+
+    <p>Esses servers geralmente operam continuamente, respondendo a requisições dos clients e garantindo que os serviços
+        ou recursos solicitados sejam entregues de forma eficiente e segura. Eles também são responsáveis por gerenciar
+        o acesso e os privilégios dos clients conforme necessário.</p>
+
+    <p>No contexto da computação em nuvem, os servers desempenham um papel crucial ao hospedar e fornecer serviços e
+        recursos na nuvem, como armazenamento de dados, processamento de dados, hospedagem de websites, entre outros.
+    </p>
+
+    <a href="#indice">Voltar ao índice</a>
+    <hr>
+
+    <h2 id="html">Como é uma estrutura básica de um HTML?</h2>
+    <p>A estrutura básica de um documento HTML (Hypertext Markup Language) consiste em diversos elementos que definem a
+        estrutura e o conteúdo de uma página web.</p>
+
+    <p>O elemento mais fundamental é o !DOCTYPE html, que indica ao navegador que o documento segue a especificação
+        HTML5. Em seguida, o documento HTML é encapsulado dentro das tags html, que contém todo o conteúdo da página.
+    </p>
+
+    <p>Dentro do elemento html, encontramos duas seções principais: o head e o body. O head contém metadados sobre o
+        documento, como o título da página, links para folhas de estilo CSS, scripts JavaScript e outros elementos
+        importantes para a renderização e funcionamento da página. Já o body contém o conteúdo visível da página, como
+        texto, imagens, vídeos, formulários, entre outros.</p>
+
+    <p>Este é apenas um exemplo básico de estrutura HTML. À medida que uma página web se torna mais complexa, mais
+        elementos e atributos podem ser adicionados para melhorar sua funcionalidade e aparência.</p>
+
+    <p>Para aprofundar o entendimento, você pode consultar este <a href="https://www.w3schools.com/html/html_basic.asp"
+            target="_blank">link</a> para mais informações sobre listas HTML.</p>
+
+    <a href="#indice">Voltar ao índice</a>
+    <hr>
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>As listas ordenadas e não ordenadas são dois tipos de listas comuns em HTML para organizar e apresentar
+        informações de maneira estruturada em uma página da web.</p>
+
+    <p>Listas Ordenadas: Utilizam a tag ol para criar uma lista em que os itens são numerados ou marcados com um ícone
+        específico, como números sequenciais (1, 2, 3...) ou letras (a, b, c...). Cada item em uma lista ordenada tem
+        uma ordem definida e é exibido em uma sequência específica. Elas são úteis quando a ordem dos itens é importante
+        para a compreensão do conteúdo.</p>
+
+    <p>Listas Não Ordenadas: Utilizam a tag ul para criar uma lista onde cada item é precedido por um marcador,
+        geralmente um ponto ou um círculo vazio. Essas listas não seguem uma ordem específica e são úteis quando a ordem
+        dos itens não é importante.</p>
+
+    <p>Para aprofundar o entendimento, você pode consultar este <a href="https://www.w3schools.com/html/html_lists.asp"
+            target="_blank">link</a> para mais informações sobre listas HTML.</p>
+
+    <a href="#indice">Voltar ao índice</a>
+    <hr>
+
+    <h2 id="exemplos">Exemplos de Tags</h2>
+    <p><strong>H1 até H6:</strong> São tags de cabeçalho que definem o nível de importância do texto. h1 é o cabeçalho
+        mais importante e h6 é o menos importante.<br>Ex:</p>
+    <h1>Cabeçalho h1</h1>
+    <h2>Cabeçalho h2</h2>
+    <h3>Cabeçalho h3</h3>
+    <h4>Cabeçalho h4</h4>
+    <h5>Cabeçalho h5</h5>
+    <h6>Cabeçalho h6</h6>
+    <br>
+    <br>
+    <br>
+    <p><strong>P:</strong> É uma tag usada para definir parágrafos de texto.<br>Ex:</p>
+    <p>Este é um parágrafo.</p>
+    <br>
+    <br>
+    <br>
+    <p><strong>Mark:</strong> Essa tag é usada para destacar parte do texto, geralmente aplicando uma cor de fundo para
+        destacá-lo visualmente.<br>Ex:</p>
+    <mark>Mark</mark>
+    <br>
+    <br>
+    <br>
+    <p><strong>Small:</strong> Define um texto com tamanho de fonte menor, geralmente usado para notas de rodapé ou
+        informações menos importantes.<br>Ex:</p>
+    <small>Small</small>
+    <br>
+    <br>
+    <br>
+    <p><strong>I:</strong> Indica texto em itálico, embora seu uso tenha evoluído para representar ênfase ou texto
+        alternativo.<br>Ex:</p>
+    <i>Itálico</i>
+    <br>
+    <br>
+    <br>
+    <p><strong>U:</strong> Define texto sublinhado, embora seja geralmente desencorajado devido à ambiguidade em relação
+        à representação de links.<br>Ex:</p>
+    <u>Sublinhado</u>
+    <br>
+    <br>
+    <br>
+    <p><strong>Strong:</strong> Indica que o texto deve ser enfatizado de forma mais forte, geralmente exibido em
+        negrito.<br>Ex:</p>
+    <strong>Strong</strong>
+    <br>
+    <br>
+    <br>
+    <p><strong>Ol:</strong> Define uma lista ordenada, onde cada item é numerado.<br>Ex:</p>
+    <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+    <br>
+    <br>
+    <br>
+    <p><strong>Ul:</strong> Define uma lista não ordenada, onde cada item é marcado com um ponto, geralmente usado para
+        listas de itens sem ordem específica.<br>Ex:</p>
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <p><strong>Li:</strong> Define um item de lista, dentro de ol ou ul</p>
+    <br>
+    <br>
+    <br>
+    <p><strong>A:</strong> É a tag de âncora usada para criar links para outras páginas ou recursos.<br>Ex:</p>
+    <a href="#exemplos">Âncora para Exemplos de Tags</a>
+    <br>
+    <br>
+    <br>
+    <p><strong>Hr:</strong> Cria uma linha horizontal para dividir conteúdo.</p>
+    <br>
+    <br>
+    <br>
+    <p><strong>Sub:</strong> Define texto como subscrito, geralmente usado para representar fórmulas químicas ou
+        matemáticas.<br>Ex:</p>
+    <sub>Subscrito</sub>
+    <br>
+    <br>
+    <br>
+    <p><strong>Sup:</strong> Define texto como sobrescrito, também comumente usado para fórmulas matemáticas.<br>Ex:</p>
+    <sup>Sobrescrito</sup>
+    <br>
+    <br>
+    <br>
+    <p><strong>Blockquote:</strong> Define uma seção de texto que é uma citação longa, geralmente recuada visualmente
+        para destacá-la do texto circundante.<br>Ex:</p>
+    <blockquote>Blockquote</blockquote>
+    <br>
+    <br>
+    <br>
+    <p><strong>Font:</strong> Esta tag era usada no HTML antigo para definir o estilo de fonte, tamanho e cor do texto.
+        No entanto, seu uso foi desencorajado em favor de métodos mais modernos de estilização, como CSS. Agora é
+        considerada obsoleta e não recomendada para uso.</p>
+    <br>
+    <br>
+    <br>
+    <p><strong>Del:</strong> Esta tag é usada para representar texto deletado ou removido de um documento. Normalmente,
+        o texto dentro desta tag é exibido com uma linha através dele para indicar que foi removido.<br>Ex:</p>
+    <del>Deletado</del>
+    <br>
+    <br>
+    <br>
+    <p><strong>Abbr:</strong> Esta tag é usada para definir uma abreviação ou acrônimo dentro do texto, fornecendo uma
+        explicação do termo quando o usuário passa o mouse sobre ele.<br>Ex:</p>
+    <p>O <abbr title="Hypertext Markup Language">HTML</abbr> foi criado em 1991, por Tim Berners-Lee.</p>
+    <br>
+    <br>
+    <br>
+    <a href="#indice">Voltar ao índice</a>
+    <hr>
+
+
+    <h2 id="referencias">Links de referências</h2>
+    <ul>
+        <li><a href="https://www.dio.me/" target="_blank">http://dio.me</a></li>
+        <li><a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_computa%C3%A7%C3%A3o"
+                target="_blank">https://pt.wikipedia.org</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">http://w3c.org</a></li>
+    </ul>
+    <a href="#indice">Voltar ao índice</a>
+    <hr>
+
+</body>
+
+</html>
